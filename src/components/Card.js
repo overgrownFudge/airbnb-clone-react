@@ -16,10 +16,11 @@ export default function Card(props) {
             }
             <img
                 src={require(`../images/${props.coverImg}`)}
+                alt="cover image"
                 className="card--image"
             />
             <div className="card--stats">
-                <img src={require("../images/star.png")} className="card--star" />
+                <img src={require("../images/star.png")} alt="small red star" className="card--star" />
                 <span>{props.stats.rating}</span>
                 <span className="gray">({props.stats.reviewCount}) • </span>
                 <span className="gray">{props.location}</span>
